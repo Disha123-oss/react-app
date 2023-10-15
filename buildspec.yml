@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14
+      nodejs: 10
     commands:
       - npm install
 
@@ -11,16 +11,8 @@ phases:
     commands:
       - npm run build
 
-    location: https://github.com/Disha123-oss/react-app 
-    type: GITHUB
-    buildspec: buildspec.yml  
-    base-directory: frontend/reactjs-frontend  
-
 
 artifacts:
   files:
     - '**/*'
-  location: https://github.com/Disha123-oss/react-app 
-  type: GITHUB
-  buildspec: frontend/reactjs-frontend/buildspec.yml 
-  base-directory: frontend/reactjs-frontend
+ 
